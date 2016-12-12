@@ -4,7 +4,7 @@ function deleteGivingPoint() {
     var name = $('#nameForDelete').val();
     $.ajax({
         type: "GET",
-        url: "/userorder/search/deleteByName?name=" + name.replace("/ /g", "%20"),
+        url: "/givingpoint/search/deleteByName?name=" + name.replace("/ /g", "%20"),
         contentType: "application/json",
         dataType: 'json'
     });
@@ -13,7 +13,7 @@ function deleteGivingPoint() {
 function deleteAll() {
     $.ajax({
         type: 'GET',
-        url: "/userorder/search/deleteAll/"
+        url: "/givingpoint/search/deleteAll/"
     });
 }
 

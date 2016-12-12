@@ -24,7 +24,7 @@ function addNewStatusGoods() {
     var requestJSONparametr = "{\"number\": \"" + number + "\", \"estimate\": \"" + estimate + "\", \"status\": \"" + status + "\"}";
     $.ajax({
         type: "POST",
-        url: "/statusgoods/add",
+        url: "/statusgoods/",
         contentType: "application/json",
         dataType: 'json',
         data: requestJSONparametr

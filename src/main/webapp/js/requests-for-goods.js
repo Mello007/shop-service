@@ -62,7 +62,7 @@ priceRequest.onload = function (){             //Функция которая �
         var numberOfReportsCard = document.createElement('td');
         numberOfReportsCard.innerHTML = item['width'];
         var guarantee = document.createElement('td');
-        numberOfReportsCard.innerHTML = item['guarantee'];
+        guarantee.innerHTML = item['guarantee'];
 
         var elementRow = document.createElement('tr'); /// /создаем строку таблицы
 
